@@ -1,0 +1,6 @@
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\bin\Debug\ObjParser.dll
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\bin\Debug\ObjParser.pdb
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\obj\Debug\ObjParser.csprojResolveAssemblyReference.cache
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\obj\Debug\ObjParser.csproj.CoreCompileInputs.cache
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\obj\Debug\ObjParser.dll
+C:\Users\hajde\OneDrive\doktorat\Additive Manufacturing\ObjParser-master\ObjParser\obj\Debug\ObjParser.pdb
