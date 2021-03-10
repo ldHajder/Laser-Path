@@ -91,14 +91,14 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(643, 484);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(643, 488);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -111,7 +111,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 72);
+            this.label1.Size = new System.Drawing.Size(173, 70);
             this.label1.TabIndex = 7;
             this.label1.Text = "Points";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,9 +126,9 @@
             this.flowLayoutPanel2.Controls.Add(this.open_file);
             this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(360, 8);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(364, 8);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(101, 66);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(94, 64);
             this.flowLayoutPanel2.TabIndex = 15;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
@@ -141,7 +141,7 @@
             this.open_file.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.open_file.Location = new System.Drawing.Point(3, 3);
             this.open_file.Name = "open_file";
-            this.open_file.Size = new System.Drawing.Size(95, 27);
+            this.open_file.Size = new System.Drawing.Size(88, 26);
             this.open_file.TabIndex = 14;
             this.open_file.Text = "Get from file";
             this.open_file.UseVisualStyleBackColor = true;
@@ -154,12 +154,13 @@
             this.button2.AutoSize = true;
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(3, 36);
+            this.button2.Location = new System.Drawing.Point(3, 35);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 27);
+            this.button2.Size = new System.Drawing.Size(88, 26);
             this.button2.TabIndex = 15;
             this.button2.Text = "Write points";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
@@ -168,7 +169,7 @@
             this.button3.AutoSize = true;
             this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(495, 436);
+            this.button3.Location = new System.Drawing.Point(495, 440);
             this.button3.MaximumSize = new System.Drawing.Size(145, 45);
             this.button3.MinimumSize = new System.Drawing.Size(145, 45);
             this.button3.Name = "button3";
@@ -182,9 +183,9 @@
             // 
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 80);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 78);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(173, 350);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(173, 356);
             this.flowLayoutPanel3.TabIndex = 18;
             this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
             // 
@@ -221,7 +222,7 @@
             this.dataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGrid.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGrid.Location = new System.Drawing.Point(182, 80);
+            this.dataGrid.Location = new System.Drawing.Point(182, 78);
             this.dataGrid.MinimumSize = new System.Drawing.Size(400, 100);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -255,8 +256,9 @@
             this.dataGrid.RowTemplate.ErrorText = "Error";
             this.dataGrid.RowTemplate.Height = 24;
             this.dataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid.Size = new System.Drawing.Size(458, 350);
+            this.dataGrid.Size = new System.Drawing.Size(458, 356);
             this.dataGrid.TabIndex = 17;
+            this.dataGrid.Visible = false;
             this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // X
@@ -414,7 +416,7 @@
             this.optionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(643, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(643, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -427,28 +429,28 @@
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -458,7 +460,7 @@
             this.viewMotiveToolStripMenuItem});
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -469,28 +471,28 @@
             this.whiteToolStripMenuItem,
             this.grayToolStripMenuItem});
             this.viewMotiveToolStripMenuItem.Name = "viewMotiveToolStripMenuItem";
-            this.viewMotiveToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.viewMotiveToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.viewMotiveToolStripMenuItem.Text = "View motive";
             this.viewMotiveToolStripMenuItem.Click += new System.EventHandler(this.viewMotiveToolStripMenuItem_Click);
             // 
             // darkToolStripMenuItem
             // 
             this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
-            this.darkToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.darkToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.darkToolStripMenuItem.Text = "Dark";
             this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
             // 
             // whiteToolStripMenuItem
             // 
             this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.whiteToolStripMenuItem.Text = "White";
             this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
             // 
             // grayToolStripMenuItem
             // 
             this.grayToolStripMenuItem.Name = "grayToolStripMenuItem";
-            this.grayToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.grayToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.grayToolStripMenuItem.Text = "Gray";
             this.grayToolStripMenuItem.Click += new System.EventHandler(this.grayToolStripMenuItem_Click);
             // 

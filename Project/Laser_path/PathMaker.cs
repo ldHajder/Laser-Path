@@ -200,21 +200,21 @@ namespace Laser_path
                 {
                     for (int i = 1; i < vertices.Count; i++)
                     {
-                        power[i] = (vertices[i].X < vertices[i - 1].X) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].X - vertices[i - 1].X) == 0) ? (int)laser_power : 0;
+                        power[i] = (vertices[i].X > vertices[i - 1].X) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].X - vertices[i - 1].X) == 0) ? (int)laser_power : 0;
                     }
                 }
                 else if (direction == 1)
                 {
                     for (int i = 1; i < vertices.Count; i++)
                     {
-                        power[i] = (vertices[i].Y < vertices[i - 1].Y) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].Y - vertices[i - 1].Y) == 0) ? (int)laser_power : 0;
+                        power[i] = (vertices[i].Y > vertices[i - 1].Y) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].Y - vertices[i - 1].Y) == 0) ? (int)laser_power : 0;
                     }
                 }
                 else
                 {
                     for (int i = 1; i < vertices.Count; i++)
                     {
-                        power[i] = (vertices[i].Z < vertices[i - 1].Z) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].Z - vertices[i - 1].Z) == 0) ? (int)laser_power : 0;
+                        power[i] = (vertices[i].Z > vertices[i - 1].Z) ? (int)laser_power : 0;    //      power[i] = ((vertices[i].Z - vertices[i - 1].Z) == 0) ? (int)laser_power : 0;
                     }
                 }
             }
